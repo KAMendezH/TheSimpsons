@@ -1,0 +1,92 @@
+.Card__container{
+    display: grid;
+    grid-template-areas: 
+    "container__id container__id"
+    "container__img container__info";
+    padding: .5rem;
+    /* width: clamp(300px, 100% , 500px); */
+    width: 100%;
+    max-width: 400px;
+    background-color: #191919;
+    border-radius: 10px;
+    gap: .5rem;
+    cursor: pointer;
+}
+.Card__container:hover .Card__img{
+    filter: drop-shadow(0 0 3px #e2d522);
+}
+.Card__container__img{
+    grid-area: container__img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Card__container__info{
+    grid-area: container__info;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.Card__img{
+    transition: .3s;
+    width: clamp(150px, 2vw , 200px);
+}
+/* ID */
+.Card__container__id{
+    grid-area: container__id;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.Card__id{
+    padding: .2rem;
+    border-radius: 50%;
+    border: solid 1px #494848;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-content: center;
+}
+/* SPAN CONTAINER */
+.Card__span__container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .2rem;
+}
+/* CARD__P */
+.Card__p{
+    margin: 0;
+    color: #636161;
+    font-family: cursive;
+}
+/* CARD__H5 */
+.Card__h5{
+    margin: 0;
+}
+/* NAME */
+.Card__name{
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+    margin: 0;
+}
+
+/* STATUS */
+
+.Card__status__deceased{
+    background-color: rgb(180, 76, 76);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid 1px red;
+    color: #ffffff;
+}
+
+.Card__status__alive{
+    background-color: rgb(83, 195, 92);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid 1px rgb(0, 255, 26);
+    color: #ffffff;
+}

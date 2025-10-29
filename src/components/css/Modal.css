@@ -1,0 +1,87 @@
+.Modal__backgound{
+    background-color: #0006;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+}
+.Modal__backgound--active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.Modal__container{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    width: clamp(400px, 3vw , 450px);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width:thin;
+    scrollbar-color: #dad9d9 #ffffff;
+    gap: .3rem;
+}
+.Modal__options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Span__exit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #900;
+    cursor: pointer;
+}
+.Exit__p{
+    padding: 0;
+    margin: 0;
+}
+.Exit__icon{
+    font-size: clamp(1.4rem, 1vw, 1.6rem);
+}
+.Options__id{
+    font-size: clamp(1.4rem, 1vw, 1.6rem);
+    font-family: cursive;
+}
+.Modal__img{
+    width: 200px;
+}
+.Modal__name{
+    font-size: clamp(1.8rem, 2vw, 2rem);
+    font-family: cursive;
+    color: #2a2a2a;
+}
+.Modal__legend{
+    padding: .5rem;
+}
+.Modal__fieldset{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border-color: #959494;
+}
+.Modal__li{
+    font-size: clamp(.6rem, 1vw, .8rem);
+    color: #2a2a2a;
+}
+.Modal__h3{
+    color: #2a2a2a;
+    font-size: clamp(.8rem, 1vw, 1rem);
+    margin: 0;
+}

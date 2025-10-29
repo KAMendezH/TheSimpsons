@@ -1,0 +1,25 @@
+.Header__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0c0c0c;
+    margin-bottom: 1rem;
+}
+
+.Header__img{
+    width: 100px;
+    height: 100px;
+    transition: filter .3s;
+    cursor: pointer;
+    &:hover{
+        filter: drop-shadow(0 0 10px #fff);
+    }
+}
+.Header__title{
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
+    font-family: cursive;
+    color: #eee125;
+    cursor: pointer;
+    text-align: center;
+}
