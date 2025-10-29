@@ -4,9 +4,9 @@
     "container__id container__id"
     "container__img container__info";
     padding: .5rem;
-    /* width: clamp(300px, 100% , 500px); */
-    width: 100%;
-    max-width: 400px;
+    width: clamp(300px, 100% , 400px);
+    /* width: 100%;
+    max-width: 400px; */
     background-color: #191919;
     border-radius: 10px;
     gap: .5rem;
@@ -37,6 +37,7 @@
     display: flex;
     justify-content: end;
     width: 100%;
+    color: #fff;
 }
 .Card__id{
     padding: .2rem;
@@ -63,6 +64,7 @@
 /* CARD__H5 */
 .Card__h5{
     margin: 0;
+    color: #fff;
 }
 /* NAME */
 .Card__name{
@@ -71,22 +73,9 @@
     font-family: cursive;
     text-decoration: underline;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100px;
+    color: #fff;
 }
 
-/* STATUS */
-
-.Card__status__deceased{
-    background-color: rgb(180, 76, 76);
-    padding: 5px 10px;
-    border-radius: 10px;
-    border: solid 1px red;
-    color: #ffffff;
-}
-
-.Card__status__alive{
-    background-color: rgb(83, 195, 92);
-    padding: 5px 10px;
-    border-radius: 10px;
-    border: solid 1px rgb(0, 255, 26);
-    color: #ffffff;
-}

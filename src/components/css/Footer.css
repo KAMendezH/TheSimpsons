@@ -4,8 +4,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: .5rem;
+    padding: 1rem;
     margin-top: 1rem;
+    gap: .5rem;
 }
 .Footer__icons{
     display: flex;
@@ -14,6 +15,7 @@
 }
 .Footer__icon{
     font-size: clamp(1.4rem, 1vw, 1.6rem);
+    color: #fff;
     &:hover{
         filter: drop-shadow(0 0 3px #969595);
     }

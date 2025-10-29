@@ -38,7 +38,7 @@ function Modal(){
                     <Span__Info title="birthdate: " text={dataModal.birthdate ? dataModal.birthdate : "unknown"}/>
                     <Line color='#b1b1b1ff'/>
                     <h3 className='Modal__h3'>Phrases: </h3>
-                    <ul>
+                    <ul className='Modal__ul'>
                         {
                             dataModal.phrases.map(p =>(
                                 <li className='Modal__li'>{p}</li>

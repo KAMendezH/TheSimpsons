@@ -22,6 +22,19 @@ function CardCharacter({portrait_path, name, age, occupation, phrases, status, g
         birthdate: birthdate ?? "unknown",
         img: url
     }
+    let newName;
+    let newOccupation;
+    if(name.length > 12){
+        newName = name.split(" ")[0] + "...";
+    }else{
+        newName = name;
+    }
+    if(occupation.split(" ").length > 3){
+        newOccupation = occupation.split(" ").slice(0, 3).join(" ") + "...";
+        console.log(newOccupation)
+    }else{
+        newOccupation = occupation
+    }
    
     return(
         <section className='Card__container' onClick={()=>{setData(DataModal); modalActive();}}>
@@ -35,7 +48,7 @@ function CardCharacter({portrait_path, name, age, occupation, phrases, status, g
                 
                 <span className='Card__span__container'>
                     <p className='Card__p'>name:</p>
-                    <h1 className='Card__name'>{name}</h1>
+                    <h1 className='Card__name'>{newName}</h1>
                 </span>
                 <span className='Card__span__container'>
                     <p className='Card__p'>age:</p>
@@ -43,7 +56,7 @@ function CardCharacter({portrait_path, name, age, occupation, phrases, status, g
                 </span>
                 <span className='Card__span__container'>
                     <p className='Card__p'>occupation:</p>
-                    <h5 className='Card__h5'>{occupation}</h5>
+                    <h5 className='Card__h5'>{newOccupation}</h5>
                 </span>
                 {/* {
                     phrases.map(p => (
